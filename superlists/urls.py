@@ -19,5 +19,7 @@ from lists import urls as list_urls
 
 urlpatterns = [
     url(r'^$', list_views.home_page, name='home'),
+    url(r'^(?P<filename>(robots.txt)|(humans.txt))$', 
+        list_views.home_files, name='home-files'),
     url(r'^lists/', include(list_urls)),
 ]

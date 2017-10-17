@@ -4,6 +4,9 @@ from lists.models import Item, List
 def home_page(request):
     return render(request, 'home.html')
 
+def home_files(request, filename):
+    return render(request, filename, {}, content_type="text/plain")
+
 def view_list(request, list_id):
     list_ = List.objects.get(id=list_id)
     return render(request, 'list.html', {'list': list_}) 
