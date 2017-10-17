@@ -9,5 +9,7 @@ class NewVisitorTest(FunctionalTest):
         self.assertNotIn("Not Found", self.browser.title)
         self.browser.get(self.live_server_url + "/humans.txt")
         self.assertNotIn("Not Found", self.browser.title)
+        self.browser.get(self.live_server_url + "/static/img/favicon.ico")
+        self.assertNotIn("Not Found", self.browser.title)
 
 
