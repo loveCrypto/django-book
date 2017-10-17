@@ -26,7 +26,6 @@ SECRET_KEY = 'xz$%%=2-3nuvsupd6%m0bku2m_-xrpum^*ek*vmsdkz)eixwvd'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-        'django.illu.arcturus.uberspace.de',
         ]
 
 
@@ -121,7 +120,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '/var/www/virtual/illu/django.illu.arcturus.uberspace.de/static'))
+STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
 
-# Gunicorn
-USE_X_FORWARDED_HOST = True
