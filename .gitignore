@@ -6,3 +6,4 @@ venv/
 .coverage
 htmlcov
 *.swp
+superlists/settings/__init__.py
