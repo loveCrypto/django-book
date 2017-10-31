@@ -1,8 +1,8 @@
 from .base import *
 
-DEBUG = FALSE
+#DEBUG = False
 
-ALLOWED_HOST = ['django.illu.arcturus.uberspace.de',]
+ALLOWED_HOSTS = ['django.illu.arcturus.uberspace.de',]
 
 STATIC_ROOT = os.path.abspath(
     os.path.join(BASE_DIR,
@@ -10,4 +10,4 @@ STATIC_ROOT = os.path.abspath(
 )
 
 # Gunicorn
-USE_X_FORWARDED_HOST =TRUE
+USE_X_FORWARDED_HOST = True
